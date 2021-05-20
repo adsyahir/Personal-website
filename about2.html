@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="Fork-Awesome-1.1.7/scss/fork-awesome.scss">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+        <link href="css/skins/yellow.css" rel="stylesheet">
+        <link rel="stylesheet" href="revealator-master/fm.revealator.jquery.css">    
+        <link rel="stylesheet" href="css/circle.css">
+        <style>
+* , ::after, ::before {
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+ }
+ div
+ {
+   display:block;
+ }
+ body
+    {
+        margin:0;
+        background:url(img/blackiii_thumbnail.jpg);
+        color: #ffb400 ;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        height: 100vh;
+        font-size:29px;
+        overflow-x: hidden;
+        box-sizing:border-box;
+        position: relative;
+        font-family:'Poppins',sans-serif;
+    }
+    
+    .wrapper
+    {
+       display:flex;
+       height: 100%;
+       margin: 0;
+       flex-direction: row ;
+      justify-content: center;
+       text-align: center;
+   }
+
+   .wrapper > *
+   {
+       border:1px yellow solid;
+       flex: 100%;
+       padding: 10px;
+   }
+    .box1
+    {
+      justify-content: center;
+      order:1;
+      flex:13;
+      margin-right: 300px;
+      margin-left:300px;
+      
+    }
+    .box2
+    {
+      
+      order:2;
+      flex:1;
+    }
+    
+    @media (min-width: 992px)
+  {
+    .d-lg-none
+    {
+      display:none;
+    }
+    .header 
+    {
+    position: fixed;
+    right: 30px;
+    bottom: 0;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 200px);
+    top: 100px;
+    opacity: 1;
+    transition: opacity 0.3s;
+    -webkit-transition: opacity 0.3s;
+  }
+
+  .header.hide-header {
+    z-index: 0 !important;
+    opacity: 0;
+  }
+
+  .header ul.icon-menu {
+    margin: 0;
+    padding: 0;
+  }
+
+  .header ul.icon-menu li.icon-box {
+    width: 50px;
+    height: 50px;
+    list-style: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+    margin: 20px 0;
+    border-radius: 50%;
+    background: #2b2a2a;
+  }
+
+  .header ul.icon-menu li.icon-box i {
+    color: #ddd;
+    font-size: 19px;
+    transition: .3s;
+  }
+
+  .header ul.icon-menu li.icon-box.active,
+  .header ul.icon-menu li.icon-box:hover,
+  .header ul.icon-menu li.icon-box.active i,
+  .header ul.icon-menu li.icon-box:hover i {
+    color: #fff;
+  }
+
+  .header .icon-box h2 {
+    font-size: 15px;
+    font-weight: 500;
+    font-family: sans-serif;
+  }
+
+  .header .icon-box a {
+    display: block;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+  }
+
+  .header .icon-box i.fa {
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .header .icon-menu i {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-size: 35px;
+    top: 15px;
+  }
+
+  .header .icon-box h2 {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    color: #fff;
+    line-height: 50px;
+    font-weight: 500;
+    transition: all .3s;
+    border-radius: 30px;
+    text-transform: uppercase;
+    padding: 0 25px 0 30px;
+    height: 50px;
+  }
+
+  .header .icon-box a:hover h2 {
+    opacity: 1;
+    right: 27px;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 13px;
+    text-align: center;
+    font-weight:bold;
+    border-radius: 30px 0 0 30px;
+  }
+
+  .header ul.icon-menu li.icon-box.active
+  {
+     background-color:#ffb400;
+  }
+}
+  h6
+     {
+      color: #eee;
+      font-size: 22px;
+      font-weight: 400;
+      display: block;
+      line-height: 3;
+
+     }
+
+     
+     h1
+     {
+      color:white;
+      font-size: 41px;
+      line-height: 10px;
+      font-weight: 700;
+     }
+     h2
+     {
+       font-weight: 500;
+       font-family: sans-serif;
+     }
+    
+
+    .text-uppercase
+    {
+       text-transform: uppercase !important;
+        
+    }
+    .open-sans-font
+    {
+      font-family:'Open sans',sans-serif;
+    }
+    .poppins-font
+    {
+      font-family:'Poppins', sans-serif;
+
+    }
+    p
+    {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      line-height: 32px;
+       font-size: 16px;
+       color:white;
+    }
+    .container
+    {
+        position: relative;
+        width: 100%;
+        height:600px;
+        max-width:600px;
+        max-height:3000px;
+        overflow:hidden;
+        box-shadow:6px 7px 7px 1px black;
+        border-radius: 50%;
+        left: 50px;
+        color:white;
+    }
+    .container img 
+    {
+        height: 100%;
+        width: 100%;
+       -webkit-filter: blur(0px);
+       -moz-filter: blur(0px);
+       -o-filter: blur(0px);
+       -ms-filter: blur(0px);
+        filter: blur(0px);
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all .5s;
+        filter: brightness(80%);
+    }
+
+    .btn {
+  box-shadow: none !important;
+  border-radius: 26px;
+  font-weight: 500;
+  height: 46px;
+  line-height: 46px;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0 40px;
+  outline: none !important;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: .5px;
+  border: 0;
+  font-size: 14px;
+  text-align: center;
+   font-weight:bold;
+}
+
+.btn,
+.btn:hover,
+.btn:focus {
+  color: #fff;
+  text-decoration: none;
+}
+.btn:before {
+    font: 15px/1.2em FontAwesome;
+    color: #fff;
+    position: absolute;
+    height: 100%;
+    right: 25px;
+    top: 50%;
+    margin-top: -9px;
+    transition: all 0.3s;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+.btn.btn-about:before {
+    content: "\f007";
+  }
+  .btn span {
+    position: relative;
+    display: block;
+    transition: all 0.3s;
+  }
+
+  .btn:hover span {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  .btn:hover:before {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  @media (max-width: 991px) {
+
+  .d-none
+  {
+    display:none;
+  }
+
+  .btn {
+    padding: 0 28px;
+  }
+
+  body.home {
+    padding: 25px;
+  }
+
+  body.home .main-container {
+    padding: 30px 0 !important;
+  }
+
+  .home .home-details-container {
+    margin: 0 auto;
+  }
+
+  .home .home-details {
+    padding: 0;
+  }
+
+  .main-img-mobile {
+    border-radius: 50%;
+    width: 270px;
+    height: 270px;
+    border: 4px solid #252525;
+    margin: 0 auto 25px;
+    display: block;
+  }
+
+  .home .home-details h1 {
+    font-size: 38px;
+    line-height: 38px;
+    margin: 29px 0 13px;
+  }
+
+  .home .home-details p {
+    margin: 10px 0 23px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  #menuToggle {
+    display: inline-block;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 1111;
+    user-select: none;
+    padding: 19px 0 0 16px;
+    width: 54px;
+    height: 54px;
+    border-radius: 5px;
+    background: #252525;
+  }
+
+  #menuToggle input {
+    display: flex;
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    top: 0;
+    left: 0;
+  }
+
+  #menuToggle > span {
+    display: flex;
+    width: 23px;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #ffffff;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 5px 0;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    opacity 0.55s ease;
+  }
+
+  #menuToggle > span:first-child {
+    transform-origin: 0 0;
+  }
+
+  #menuToggle > span:nth-last-child(2) {
+    transform-origin: 0 100%;
+  }
+
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(4px, 0);
+    background: #fff;
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(2px, 4px);
+  }
+
+  #menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding-top: 60px;
+    background-color: #252525;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0 0;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+
+  #menuToggle input:checked ~ ul {
+    transform: none;
+  }
+
+  #menu li {
+    position: relative;
+    padding-left: 30px;
+  }
+
+  #menu li:after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: calc(100% - 60px);
+    background: #333;
+    left: 30px;
+  }
+
+  #menu li:last-child:after {
+    display: none;
+  }
+
+  #menu li.active a span {
+    font-weight: 600;
+  }
+
+  #menu li a {
+    color: #fff;
+    text-transform: uppercase;
+    transition-delay: 2s;
+    font-size: 26px;
+    display: block;
+    text-decoration: none;
+    padding: 14px 0;
+    position: relative;
+  }
+
+  #menu li a span {
+    position: absolute;
+    left: 50px;
+    font-weight: 400;
+  }
+
+  .portfolio .grid li {
+    width: 50%;
+  }
+
+  .portfolio .grid li figure div {
+    display: none !important;
+  }
+
+  .portfolio .slideshow {
+    background: #252525;
+  }
+
+  .portfolio .slideshow nav span {
+    padding: 0;
+  }
+
+  .portfolio .slideshow ul > li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+  }
+
+  .portfolio .slideshow ul > li:after {
+    display: none;
+  }
+
+  .portfolio .slideshow figure {
+    padding: 125px 30px 30px;
+    border-radius: 0;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .portfolio .slideshow nav span.nav-prev,
+  .portfolio .slideshow nav span.nav-next {
+    top: 35px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .portfolio .slideshow nav span.nav-next {
+    right: 30px;
+  }
+
+  .portfolio .slideshow nav span.nav-prev {
+    left: 30px;
+  }
+
+  .portfolio .slideshow nav span.nav-prev img,
+  .portfolio .slideshow nav span.nav-next img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .portfolio .slideshow nav span:before {
+    display: none;
+  }
+
+  .portfolio .slideshow nav span.nav-close {
+    top: 35px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 32px;
+    height: 32px;
+    display: block;
+    line-height: 0;
+  }
+
+  .portfolio .slideshow nav span.nav-close img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .portfolio .slideshow nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 102px;
+    background: #252525;
+    z-index: 1;
+    border-bottom: 1px solid #333;
+  }
+
+  .contact .main-content {
+    padding-bottom: 0;
+  }
+
+}
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  display:flex;
+  
+}
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #ffb400;
+  animation: loader 2s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+@keyframes loader-inner {
+  0% { height: 0%;}
+  25% { height: 0%;}
+  50% { height: 100%;}
+  75% { height: 100%;}
+  100% { height: 0%;}
+}
+
+.container2
+{
+  margin-top: 100px;
+  padding:20px;
+  text-align:center;
+  color:white; 
+
+}
+ .container2 h1
+{
+  font-size: 56px;
+  line-height: 1.2;
+  font-weight: 900;
+  font-family:sans-serif;
+  margin:0;
+}
+.title-bg
+{
+    font-size: 110px;
+    letter-spacing: 10px;
+    line-height: 0.7;
+    display: inline-flex;
+    text-transform: uppercase;
+    font-weight: 800;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.20);
+    position: relative;
+    top:-34px;
+    
+}
+.title-section
+{
+  width: 100%;
+  position: relative;
+  top:-34px;
+}
+.col
+ {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 50px;
+    padding-left: 60px
+ }
+ .col i
+ {
+    font-size: 15px;
+    color:#ffb400;
+    
+ }
+
+  .container3
+    {
+    position: relative;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.600);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    text-align:left;
+    color:white;
+    border-radius: 25px;
+    width: 100%;
+    height:100%;
+    max-width:1200px;
+    max-height:1000px;
+    left:1%;
+    border:1px solid black;
+    margin-right: 10px;
+    display: block;
+    }
+     
+    .box-image
+    {
+       grid-area:menu;
+    }
+    .box-image > img
+    {
+      display: flex;
+      border-radius:50%;
+      box-shadow:6px 7px 7px 1px black;
+      width: 100%;
+      max-height: 250px;
+      max-width:250px ;
+      min-width: 100px;
+      
+    }
+    .box-info
+    {
+       grid-area: main;      
+    }
+    .box-logo1
+    {
+        grid-area: logo-1;
+    }
+    .box-logo2
+    {
+      grid-area: logo-2;
+    }
+    .box-logo3
+    {
+      grid-area:logo-3;
+      padding-right: 10px;
+      grid-auto-rows: max-content;
+    }
+    .box-logo4
+    {
+      grid-area:button;
+    }
+     
+
+    .wrapper-info
+    {
+      display:grid;
+      grid-template-areas: 
+      'menu menu main main main main main main main '
+      'logo-1 logo-1 logo-1 logo-2 logo-2 logo-2 logo-3 logo-3 button ' ;
+      min-width:750px;
+     
+    }
+    @media(max-width:547px)
+    { 
+
+      .wrapper-info
+      {
+        display:grid;
+        grid-template-areas: 
+        'menu menu main main main main main main main '
+        'logo-1 logo-1 logo-1 logo-2 logo-2 logo-2 logo-3 logo-3' 
+        'button ' ;
+     
+      }
+    }
+    
+    div
+    {
+      display: block;
+    }
+    .wrapper-info > div
+    {
+      border:1px red solid
+    }
+    .col1
+ {
+    position: relative;
+    width: 100%;
+ 
+    padding-right: 10px;
+  
+ }
+ .desc-icon
+{
+  padding-left: 55px;
+  padding-top: 1px;
+  padding-bottom: 5px;
+}
+.desc-icon h6
+{
+  
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 15px;
+    margin:0;
+    padding:0;
+    color:white;
+    font-family: sans-serif;
+
+}
+
+.desc-icon p
+{
+  font-size: 12px;
+  margin-block-start: 0em;
+}
+
+.icon-box1
+{
+    padding-top: 45px;
+    
+}
+.icon-box1 i
+{
+    display: flex;
+    float: left;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    color: #ffb400;
+    font-size: 20px;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    border: 1px solid #ffb400;
+    margin-right: 10px;
+}.icon-box1
+{
+    padding-top: 45px;
+    
+}
+.icon-box1 i
+{
+    display: flex;
+    float: left;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    color: #ffb400;
+    font-size: 20px;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    border: 1px solid #ffb400;
+    margin-right: 10px;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-weight: 600;
+}
+h6, h6 {
+    font-size: 1rem;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+.wrapper-separate
+{
+	padding-bottom: 50px;
+}
+.divider
+{
+	position: relative;
+	margin-top: 90px;
+	height: 1px;
+}
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(60, 61, 61), transparent);
+}
+
+.div-dot:after
+{
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: -9px;
+	left: calc(50% - 9px);
+	width: 18px;
+	height: 18px;
+	background-color: goldenrod;
+	border: 1px solid rgb(48,49,51);
+	border-radius: 50%;
+	box-shadow: inset 0 0 0 2px white,
+					0 0 0 4px white;
+}
+.col2
+{
+    position: relative;
+    width: 100%;
+    padding:15px;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.container4
+    {
+    position: relative;
+    padding: 30px;
+    padding-left: 70px;
+    background-color: rgba(0, 0, 0, 0.600);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    text-align:left;
+    color:white;
+    border-radius: 25px;
+    width: 100%;
+    height:100%;
+    max-width:1165px;
+    max-height:380px;
+    margin-top:10px;
+    left:1%;
+    display: block;
+    border:1px solid black;
+    padding-right:30px;
+
+
+  }
+  .container4 h6
+{
+  font-family: sans-serif;
+  margin-top:1.5rem!important;
+  font-size:1rem;
+  margin-bottom: .5rem;
+  font-weight:600;
+  line-height:1.2;
+  padding-top:20px;
+  text-align: left;
+}
+        </style>
+    </head>
+    <body>
+      <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+      </div>
+      <div class="wrapper">
+        <div class="box1">
+          <div class="title-section">
+            <div class="container2">
+              <h1>ABOUT<span style="color: #ffb400"> ME</span></h1>
+              <span class="title-bg">RESUME</span>
+              <div class="container3">
+                <div class="wrapper-info">
+                  <div class="box-image">
+                    <img src="img/me11.jpg" />
+                  </div>
+                  <div class="box-info">
+                    <div class="col">
+                      <h3>ADAM SYAHIR BIN AZMI</h3>
+                      <i class="fa fa-map-marker"
+                        ><span>&nbsp;Johor Bahru,&nbsp;Malaysia</span></i
+                      >
+                      <p>
+                        My name is Adam Syahir and I'm 2series years old. I'm
+                        currently pursuing my study in Bachelor of Information
+                        Systems (Hons.) Information Systems Engineering. Freelance
+                        is not available as I'm still in a learning phase.
+                      </p>
+                      <p>
+                        I also play video games and do outdoor activities when I
+                        have free times. Do add me on Steam : 154673442, Valorant
+                        : chaukechau#0000 and Discord : adsyahir#0361 so we can
+                        create our adventure together (tiber).
+                      </p>
+                    </div>
+                  </div>
+                  <div class="box-logo1">
+                    <div class="col1">
+                      <div class="icon-box1">
+                        <i class="fa fa-certificate"></i>
+                        <div class="desc-icon">
+                          <h6>Diploma in Computer Science</h6>
+                          <p>Completed</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box-logo2">
+                    <div class="col1">
+                      <div class="icon-box1">
+                        <i class="fa fa-book"></i>
+                        <div class="desc-icon">
+                          <h6>BIS (Hons.) Information Systems Engineering</h6>
+                          <p>Ongoing</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box-logo3">
+                    <div class="col1">
+                      <div class="icon-box1">
+                        <i class="fa fa-handshake-o"></i>
+                        <div class="desc-icon">
+                          <h6>Freelance</h6>
+                          <p>Not available</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box-logo4">
+                    <div class="col1">
+                      <div class="icon-box1">
+                        <a href="" class="btn btn-download">
+                          <span data-hover="Download CV">Download CV</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="wrapper-separate">
+              <div class="divider div-transparent div-dot"></div>
+            </div>
+            <div class="col2">
+              <span>MY SKILLS</span>
+            </div>
+            <div class="container4">
+              <div class="parent">
+                  <div class="c100 p90">
+                    <span>90%</span>
+                    <div class="slice">
+                      <div class="bar"></div>
+                      <div class="fill"></div>
+                    </div>
+                  </div>
+                  <h6>HTML</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+            <div class="box2">
+              <header class="header" id="navbar-collapse-toggle">
+                <!-- Fixed Navigation Starts -->
+                <ul class="icon-menu d-none">
+                  <li class="icon-box active">
+                    <i class="fa fa-home"></i>
+                    <a href="index.html">
+                      <h2>Home</h2>
+                    </a>
+                  </li>
+                  <li class="icon-box">
+                    <i class="fa fa-user"></i>
+                    <a href="about2.html">
+                      <h2>About</h2>
+                    </a>
+                  </li>
+                  <li class="icon-box">
+                    <i class="fa fa-facebook"></i>
+                    <a
+                      href="https://www.facebook.com/adam.syahir.5"
+                      target="_blank"
+                    >
+                      <h2>Facebook</h2>
+                    </a>
+                  </li>
+                  <li class="icon-box">
+                    <i class="fa fa-discord-alt" aria-hidden="true"></i>
+                    <a
+                      href="https://discord.com/api/guilds/732312670153474148/widget.json"
+                      target="_blank"
+                    >
+                      <h2>Discord</h2>
+                    </a>
+                  </li>
+                  <li class="icon-box">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <a href="https://twitter.com/adsyahir" target="_blank">
+                      <h2>Twitter</h2>
+                    </a>
+                  </li>
+                  <li class="icon-box">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <a href="https://www.instagram.com/adsyahir/" target="_blank">
+                      <h2>Instagram</h2>
+                    </a>
+                  </li>
+                  <li class="icon-box">
+                    <i class="fa fa-envelope-open"></i>
+                    <a href="contact.html">
+                      <h2>Contact</h2>
+                    </a>
+                  </li>
+                </ul>
+                <!-- Fixed Navigation Ends -->
+                <nav role="navigation" class="d-block d-lg-none">
+                  <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul class="list-unstyled" id="menu">
+                      <li class="active">
+                        <a href="index.html"
+                          ><i class="fa fa-home"></i><span>Home</span></a
+                        >
+                      </li>
+                      <li>
+                        <a href="about2.html"
+                          ><i class="fa fa-user"></i><span>About</span></a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.facebook.com/adam.syahir.5"
+                          ><i class="fa fa-facebook" target="_blank"></i
+                          ><span>Facebook</span></a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://discord.com/api/guilds/732312670153474148/widget.json"
+                          target="_blank"
+                          ><i class="fa fa-discord-alt"></i
+                          ><span>Discord</span></a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://twitter.com/adsyahir"
+                          ><i class="fa fa-twitter" target="_blank"></i
+                          ><span>Twitter</span></a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/adsyahir/"
+                          ><i class="fa fa-instagram" target="_blank"></i
+                          ><span>Instagram</span></a
+                        >
+                      </li>
+                      <li>
+                        <a href="contact.html"
+                          ><i class="fa fa-envelope-open" target="_blank"></i
+                          ><span>Contact</span></a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </header>
+            </div>
+          
+     </div>
+          <script src="js/jquery-3.5.0.min.js"></script>
+          <script src="js/imagesloaded.pkgd.min.js"></script>
+          <script src="js/masonry.pkgd.min.js"></script>
+          <script src="js/classie.js"></script>
+          <script src="js/popper.min.js"></script>
+          <script src="js/bootstrap.js"></script>
+          <script src="js/custom.js"></script>
+          <script src="jquery-2.1.4.js"></script>
+          <script src="revealator-master/jquery-1.11.3.min.js"></script>
+          <script src="revealator-master/fm.revealator.jquery.js"></script>
+          <script>
+            $(window).on("load", function () {
+              $(".loader-wrapper").fadeOut("slow");
+              $(window).scrollTop(0);
+            });
+            $(document).ready(function () {
+              $("html,body").animate({ scrollTop: 0 }, 100); //100ms for example
+            });
+          </script>
+    </body>
+</html>

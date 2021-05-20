@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="Fork-Awesome-1.1.7/scss/fork-awesome.scss">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+     <link href="css/skins/yellow.css" rel="stylesheet">
+     <link rel="stylesheet" href="css/circle.css">
+     <link rel="stylesheet" href="css/fm.revealator.jquery.min.css">
+     <script src="js/modernizr.custom.js"></script>
+    
+<title>Home Page</title>
+<style>
+   * , ::after, ::before {
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+ }
+
+    body
+    {
+        margin:0;
+        background:radial-gradient(circle, #333, black);
+        background-position: center center;
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+        background-size: cover;
+        color: #ffb400 ;
+        height: 100vh;
+        font-size:29px;
+        display: flex;
+        flex-direction: column;
+        font-family:'Poppins',sans-serif;
+        overflow-x: hidden;
+    }
+
+  
+    .header 
+    {
+    position: fixed;
+    right: 30px;
+    bottom: 0;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 200px);
+    top: 100px;
+    opacity: 1;
+    transition: opacity 0.3s;
+    -webkit-transition: opacity 0.3s;
+  }
+
+  .header.hide-header {
+    z-index: 0 !important;
+    opacity: 0;
+  }
+
+  .header ul.icon-menu {
+    margin: 0;
+    padding: 0;
+  }
+
+  .header ul.icon-menu li.icon-box {
+    width: 50px;
+    height: 50px;
+    list-style: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+    margin: 20px 0;
+    border-radius: 50%;
+    background: #2b2a2a;
+  }
+
+  .header ul.icon-menu li.icon-box i {
+    color: #ddd;
+    font-size: 19px;
+    transition: .3s;
+  }
+
+  .header ul.icon-menu li.icon-box.active,
+  .header ul.icon-menu li.icon-box:hover,
+  .header ul.icon-menu li.icon-box.active i,
+  .header ul.icon-menu li.icon-box:hover i {
+    color: #fff;
+  }
+
+  .header .icon-box h2 {
+    font-size: 15px;
+    font-weight: 500;
+    font-family: sans-serif;
+  }
+
+  .header .icon-box a {
+    display: block;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+  }
+
+  .header .icon-box i.fa {
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .header .icon-menu i {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-size: 35px;
+    top: 15px;
+  }
+
+  .header .icon-box h2 {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    color: #fff;
+    line-height: 50px;
+    font-weight: 500;
+    transition: all .3s;
+    border-radius: 30px;
+    text-transform: uppercase;
+    padding: 0 25px 0 30px;
+    height: 50px;
+  }
+
+  .header .icon-box a:hover h2 {
+    opacity: 1;
+    right: 27px;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 13px;
+    text-align: center;
+    font-weight:bold;
+    border-radius: 30px 0 0 30px;
+  }
+
+  .header ul.icon-menu li.icon-box.active
+  {
+     background-color:#ffb400;
+  }
+
+
+    .container
+    {
+        position: relative;
+        width: 100%;
+        height:870px;
+        max-width:640px;
+        max-height:3000px;
+        margin-top:30px;
+        overflow:hidden;
+        display:inline-block;
+        box-shadow:6px 7px 7px 1px black;
+        border-radius: 25px;
+        left: 2%;
+        color:white;
+    }
+    .container img 
+    {
+        height: 100%;
+        width: 100%;
+       -webkit-filter: blur(0px);
+       -moz-filter: blur(0px);
+       -o-filter: blur(0px);
+       -ms-filter: blur(0px);
+        filter: blur(0px);
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all .5s;
+        filter: brightness(80%);
+    }
+     h6
+     {
+      color: #eee;
+      font-size: 22px;
+      font-weight: 400;
+      display: block;
+      line-height: 0;
+      display: block;
+
+     }
+
+     
+     h1
+     {
+      font-size: 56px;
+      line-height: 1.2;
+      font-weight: 900;
+      font-family:sans-serif;
+      margin:0;
+     }
+     h2
+     {
+       font-weight: 500;
+       font-family: sans-serif;
+     }
+    span
+    {
+      color:#ffb400 ;
+    }
+
+    .text-uppercase
+    {
+       text-transform: uppercase !important;
+        
+    }
+    .open-sans-font
+    {
+      font-family:'Open sans',sans-serif;
+    }
+    .poppins-font
+    {
+      font-family:'Poppins', sans-serif;
+
+    }
+    p
+    {
+      display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 32px;
+    font-size: 16px;
+    }
+  
+    .container1
+    {
+        position: relative;
+        width: 100%;
+        height:1000px;
+        max-width:700px;
+        max-height:650px;
+        margin-top:100px;
+        overflow:hidden;
+        display:inline-block;
+        border-radius: 25px;
+        left: 11%;
+        color:white;
+        text-align: left;
+    }
+
+    .parent
+    {
+      display:flex;
+    }
+
+
+.btn {
+  box-shadow: none !important;
+  border-radius: 26px;
+  font-weight: 500;
+  height: 46px;
+  line-height: 46px;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0 40px;
+  outline: none !important;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: .5px;
+  border: 0;
+  font-size: 14px;
+  text-align: center;
+   font-weight:bold;
+}
+
+.btn,
+.btn:hover,
+.btn:focus {
+  color: #fff;
+  text-decoration: none;
+}
+.btn:before {
+    font: 15px/1.2em FontAwesome;
+    color: #fff;
+    position: absolute;
+    height: 100%;
+    right: 25px;
+    top: 50%;
+    margin-top: -9px;
+    transition: all 0.3s;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+.btn.btn-about:before {
+    content: "\f007";
+  }
+  .btn span {
+    position: relative;
+    display: block;
+    transition: all 0.3s;
+  }
+
+  .btn:hover span {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  .btn:hover:before {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+   
+  .container2
+  {
+       margin-top: 80px;
+       padding:20px;
+       text-align:center;
+       color:white;
+  }
+  
+  .container3
+    {
+    position: relative;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.600);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    text-align:left;
+    color:white;
+    border-radius: 25px;
+    width: 100%;
+    height:1000px;
+    max-width:1100px;
+    max-height:380px;
+    margin-top:50px;
+    left:20%;
+    display: block;
+    border:1px solid black;
+
+    }
+  
+  img
+  {
+    border-radius:50%;
+    width:250px;
+    box-shadow:6px 7px 7px 1px black;
+  }
+
+  div
+  {
+    display:block;
+  }
+   .h3, h3
+  {
+     font-size:18px;
+     font-weight: 600;
+     
+     margin:0;
+  }
+
+ .col
+ {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left:15px;
+    width: 300px;
+ }
+ .col i
+ {
+    font-size: 15px;
+    color:#ffb400;
+    
+ }
+.p
+{
+  font-size: 14px;
+  line-height:24px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+ .p,span
+{
+  font-family: sans-serif;
+}
+
+.title-bg
+{
+    font-size: 110px;
+    left: 0;
+    letter-spacing: 10px;
+    line-height: 0.7;
+    position: absolute;
+    right: 0;
+    top: 19%;
+    text-transform: uppercase;
+    font-weight: 800;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.20);
+}
+.col1
+ {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 30px
+ }
+.icon-box1
+{
+    padding-top: 45px;
+    
+}
+.icon-box1 i
+{
+    display: flex;
+    float: left;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    color: #ffb400;
+    font-size: 20px;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    border: 1px solid #ffb400;
+    margin-right: 10px;
+}
+.desc-icon
+{
+  padding-left: 15px;
+  padding-top: 10px;
+}
+.desc-icon h6
+{
+  
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 5px;
+    margin:0;
+    padding:0;
+    color:white;
+    font-family: sans-serif;
+
+}
+.desc-icon span
+{
+  font-size: 13px;
+}
+.btn.btn-download:before {
+    content: "\f019";
+  }
+.btn span
+{
+  color:white;
+}
+hr.separator {
+  border-top: 1px solid #252525;
+  margin: 70px auto 55px;
+  max-width: 40%;
+  
+}
+
+.wrapper
+{
+	padding-bottom: 50px;
+}
+
+.divider
+{
+	position: relative;
+	margin-top: 90px;
+	height: 1px;
+}
+
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(60, 61, 61), transparent);
+}
+
+.div-dot:after
+{
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: -9px;
+	left: calc(50% - 9px);
+	width: 18px;
+	height: 18px;
+	background-color: goldenrod;
+	border: 1px solid rgb(48,49,51);
+	border-radius: 50%;
+	box-shadow: inset 0 0 0 2px white,
+					0 0 0 4px white;
+}
+
+.row
+{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col2
+{
+    position: relative;
+    padding:15px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.col2 span
+{
+  font-size:26px;
+  font-weight:600;
+  text-align: center;
+  color:white;
+}
+
+.container4
+    {
+    position: relative;
+    padding: 30px;
+    padding-left: 70px;
+    background-color: rgba(0, 0, 0, 0.600);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    text-align:left;
+    color:white;
+    border-radius: 25px;
+    width: 100%;
+    height:100%;
+    max-width:1165px;
+    max-height:380px;
+    margin-top:10px;
+    left:17%;
+    display: block;
+    border:1px solid black;
+    padding-right:30px;
+
+
+  }
+
+.container4 h6
+{
+  font-family: sans-serif;
+  margin-top:1.5rem!important;
+  font-size:1rem;
+  margin-bottom: .5rem;
+  font-weight:600;
+  line-height:1.2;
+  padding-top:20px;
+  text-align: left;
+}
+.container5
+    {
+    position: relative;
+    padding: 30px;
+    padding-left: 100px;
+    background-color: rgba(0, 0, 0, 0.600);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    text-align:left;
+    color:white;
+    border-radius: 25px;
+    width: 100%;
+    height:100%;
+    max-width:1135px;
+    max-height:150px;
+    margin-top:10px;
+    left:17%;
+    display: block;
+    border:1px solid black;
+    padding-right:30px;
+
+
+  }
+
+.resume-box ul
+{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.resume-box li
+{
+  position: relative;
+    padding: 0 20px 0 60px;
+    margin: 0 0 50px;
+}
+.resume-box .icon
+{
+  background-color: #ffb400;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  line-height: 40px;
+  text-align: center;
+  z-index: 1;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+}
+.fa {
+    display: inline-block;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-briefcase:before {
+    content: "\f0b1";
+}
+.resume-box .time
+{
+  color:#fff;
+  font-size: 12px;
+  padding: 1px 10px;
+  display: inline-block;
+  margin-bottom: 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  background-color: #252525;
+  opacity: .8;
+  font-family: sans-serif;
+  text-transform: uppercase!important
+}
+.resume-box h5
+{
+  font-size:18px;
+  margin:7px 0 10px;
+  font-family: sans-serif;
+  text-transform:uppercase  !important;
+  font-weight:500;
+  line-height 1.2;
+}
+.resume-box span
+{
+  opacity: .8;
+    font-weight: 600;
+    font-size: 15px;
+    position: relative;
+    padding-left: 26px;
+    color:#fff;
+}
+.resume-box span:before
+{
+  position: absolute;
+    content: '';
+    width: 10px;
+    height: 2px;
+    background-color: #fff;
+    left: 7px;
+    top: 9px;
+    opacity: .8;
+
+}
+.resume-box p 
+{
+    margin: 0;
+    color: #eee;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+.resume-box li:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20px;
+    bottom: 0;
+    border-left: 1px solid #333;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+     background: #888;
+; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2b2a2a; 
+}
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  display:flex;
+  
+}
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #ffb400;
+  animation: loader 2s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+@keyframes loader-inner {
+  0% { height: 0%;}
+  25% { height: 0%;}
+  50% { height: 100%;}
+  75% { height: 100%;}
+  100% { height: 0%;}
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.contactform input[type=text], .contact .contactform input[type=email] {
+    border: 1px solid #111;
+    width: 150px;
+    background: #252525;
+    color: #fff;
+    padding: 11px 26px;
+    border-radius: 30px;
+    outline: none !important;
+    transition: .3s;
+    display:block
+}
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: textfield;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+.col3
+ {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  
+ }
+ .d-block
+ {
+  text-transform: uppercase;
+    opacity: .8;
+    font-weight: 400;
+    display: block!important;
+    font-weight: 600;
+    padding-left: 50px;
+    line-height: 21px;
+    font-size: 15px;
+
+
+ }
+ .custom-span
+ {
+  font-weight: 500;
+    line-height: 21px;
+    padding-top: 5px;
+}
+ 
+.custom-span i
+{
+  top:10px;
+  color:#ffb400;
+}
+.contactform textarea {
+    border: 1px solid #111;
+    background: #252525;
+    color: #fff;
+    width:620px;
+    padding: 12px 26px;
+    margin-bottom: 20px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 30px;
+    outline: none !important;
+    transition: .3s;
+    
+}
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+textarea {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: textarea;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    flex-direction: column;
+    resize: auto;
+    cursor: text;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    column-count: initial !important;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    padding: 2px;
+}
+.col4
+{
+    position: relative;
+    padding:15px;
+    margin-bottom: 15px;
+    padding-right: 70px;
+}
+.btn.btn-contact:before {
+    content: "\f1d8";
+    
+}
+.btn.btn-contact:hover{
+  cursor: pointer;
+}
+
+
+</style>
+</head>
+<body>
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+
+  <div class="d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+  <div class="container2">
+    <h1>GET IN<span> TOUCH</span></h1>
+    <span class="title-bg">CONTACT</span>
+  </div>
+  <div class="container3">
+  <div class="parent">
+    
+  <div class="col3">
+    <h3>DON'T BE SHY !</h3>
+    <p>Feel free to get in touch with me. I am always<br>
+      open to discussing new projects, creative ideas<br> 
+      or opportunities to be part of your visions.
+    </p>
+    <p style="position:relative; " class="custom-span">
+    <i class="fa fa-envelope-open" style="position: absolute; font-size: 33px;"></i>
+    <span class="d-block" >MAIL ME</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adsyahir16@gmail.com
+  </p>
+  <p style="position:relative; " class="custom-span">
+    <i class="fa fa-phone-square" style="position: absolute; font-size: 38px;"></i>
+    <span class="d-block" >CALL ME</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;019-9965613
+  </p>
+  </div>
+<div class="col">
+  
+  <form class="contactform" method="post">
+    <div class="parent">
+<div class="col2">
+  <input type="text" name="name" placeholder="YOUR NAME">
+</div>
+<div class="col2">
+  <input type="text" name="email" placeholder="YOUR EMAIL">
+</div>
+<div class="col2">
+  <input type="text" name="subject" placeholder="YOUR SUBJECT">
+</div>
+</div>
+<div class="col4">
+  <textarea name="message" placeholder="YOUR MESSAGE" spellcheck="false"></textarea>
+  <button type="submit" class="btn btn-contact"><span data-hover="Send Message">Send Message</span></button>
+</div>
+  </div>
+</div>
+</div>
+ 
+</div>
+</div>
+
+
+
+<header class="header" id="navbar-collapse-toggle">
+    <!-- Fixed Navigation Starts -->
+    <ul class="icon-menu ">
+        <li class="icon-box ">
+        <i class="fa fa-home"></i>
+            <a href="index.html">
+                <h2>Home</h2>
+            </a>
+        </li>
+      </li>
+        <li class="icon-box">
+            <i class="fa fa-user"></i>
+            <a href="about.html">
+                <h2>About</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+          <i class="fa fa-facebook"></i>
+          <a href="https://www.facebook.com/adam.syahir.5" target="_blank">
+              <h2>Facebook</h2>
+          </a>
+      </li>
+        <li class="icon-box">
+            <i class="fa fa-discord-alt" aria-hidden="true"></i>
+            <a href="https://discord.com/channels/732312670153474148/732312670153474151" target="_blank">
+                <h2>Discord</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <a href="https://twitter.com/adsyahir" target="_blank">
+              <h2>Twitter</h2>
+          </a>
+      </li>
+        <li class="icon-box">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <a href="https://www.instagram.com/adsyahir/" target="_blank">
+              <h2>Instagram</h2>
+          </a>
+      </li>
+      <li class="icon-box">
+        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+        <a href="https://www.youtube.com/channel/UCOL3OIlqn0RWt7voGIPvk3g" target="_blank">
+            <h2>Youtube</h2>
+        </a>
+    </li>
+      <li class="icon-box active">
+        <i class="fa fa-envelope-open"></i>
+        <a href="contact.html">
+            <h2>Contact</h2>
+        </a>
+    </li>
+        
+    </ul>
+    <!-- Fixed Navigation Ends -->
+  
+</header>
+
+<script src="js/jquery-3.5.0.min.js"></script>
+<script src="js/styleswitcher.js"></script>
+<script src="js/fm.revealator.jquery.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpGridGallery.js"></script>
+<script src="js/jquery.hoverdir.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/custom.js"></script>
+<script src="jquery-2.1.4.js"></script>
+<script>
+  $(window).on("load",function(){
+    $(".loader-wrapper").fadeOut("slow");
+    $(window).scrollTop(0);
+  });
+
+
+$(document).ready(function() {
+  $("html,body").animate({scrollTop: 0}, 100); //100ms for example
+});
+</script>
+
+
+</body>
+</html>
