@@ -1,2 +1,2 @@
 # personal-website
-https://objective-ride-72731e.netlify.app
+https://upbeat-elion-4e0256.netlify.app/
