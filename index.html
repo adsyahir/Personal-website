@@ -7,16 +7,14 @@
     <link rel="stylesheet" href="Fork-Awesome-1.1.7/scss/fork-awesome.scss">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
     <link href="css/skins/yellow.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fm.revealator.jquery.min.css">
 <style>
  * , ::after, ::before {
    margin:0;
    padding:0;
    box-sizing:border-box;
  }
- div
- {
-   display:block;
- }
+ 
  body
     {
         margin:0;
@@ -28,6 +26,7 @@
         font-size:29px;
         overflow: hidden;
         position: relative;
+        font-family:'Poppins',sans-serif;
       
     }
     body:active .particle,
@@ -1229,6 +1228,11 @@ body:active .particle::after {
 
   @media (max-width: 991px) {
 
+    .revealator-delay
+    {
+      transition: 0s;
+    }
+
   .d-none
   {
     display:none;
@@ -1499,9 +1503,7 @@ body:active .particle::after {
        align-items:center;
        flex-flow: column ;
        
-   }
-    
-
+   } 
     .box1
     {
       flex:1;
@@ -1555,7 +1557,11 @@ body:active .particle::after {
 }
 
 @media (max-width:576px)
-{
+{ 
+  .revealator-delay
+  { 
+      transition: 0s;
+  }
   .d-img-none
   {
     display:none;
@@ -1604,11 +1610,57 @@ body:active .particle::after {
 
    
 }
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  display:flex;
+  
+}
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #ffb400;
+  animation: loader 2s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+@keyframes loader-inner {
+  0% { height: 0%;}
+  25% { height: 0%;}
+  50% { height: 100%;}
+  75% { height: 100%;}
+  100% { height: 0%;}
+}
 
 
 </style>
 </head>
 <body>
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+  <div id="particle">
   <div class="yellow particle"></div>
   <div class="medium-yellow particle"></div>
   <div class="light-blue particle"></div>
@@ -1621,15 +1673,16 @@ body:active .particle::after {
   <div class="magenta particle"></div>
   <div class="lightish-red particle"></div>
   <div class="pink particle"></div>
+</div>
   
     <div class="wrapper ">
-        <div class="box1 d-img-none">
+        <div class="box1 d-img-none d-lg-block revealator-slideup revealator-once revealator-delay1">
           <div class="container d-img-none">
  
             <img src="img/me11.jpg">
     </div>
         </div>
-        <div class="box2">
+        <div class="box2 d-lg-block revealator-slideup revealator-once revealator-delay1">
           <h6 class="text-uppercase open-sans-font d-none d-display">Hi There !</h6>
           <h1 class="text-uppercase poppins-font">I'M<span style="color:#ffb400;"> ADAM SYAHIR</span> </h1>
           <p class="open-sans-font">I'm a Malaysian based web designer &amp; front‑end developer (inshallah) focused on crafting clean &amp; user‑friendly experiences, I am passionate about building excellent software that improves the lives of those around me.</p>
@@ -1650,7 +1703,7 @@ body:active .particle::after {
               </li>
                 <li class="icon-box">
                     <i class="fa fa-user"></i>
-                    <a href="about.html" >
+                    <a href="about2" >
                         <h2>About</h2>
                     </a>
                 </li>
@@ -1696,7 +1749,7 @@ body:active .particle::after {
                   <span></span>
                   <ul class="list-unstyled" id="menu">
                       <li class="active"><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
-                      <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
+                      <li><a href="about2.html"><i class="fa fa-user"></i><span>About</span></a></li>
                       <li><a href="https://www.facebook.com/adam.syahir.5"><i class="fa fa-facebook" target="_blank"></i><span>Facebook</span></a></li>
                       <li><a href="https://discord.com/api/guilds/732312670153474148/widget.json" target="_blank"><i class="fa fa-discord-alt"></i><span>Discord</span></a></li>
                       <li><a href="https://twitter.com/adsyahir"><i class="fa fa-twitter" target="_blank"></i><span>Twitter</span></a></li>
@@ -1726,6 +1779,11 @@ body:active .particle::after {
     $(".loader-wrapper").fadeOut("slow");
     $(window).scrollTop(0);
   });
+  script>
+  $(window).load(function() {
+    $('#particle').hide();
+  });
+</script
 </script>
     </body>
 </html>

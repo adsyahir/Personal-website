@@ -1,42 +1,49 @@
 <!DOCTYPE html>
-<html  lang="en">
-<head>
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link rel="stylesheet" href="Fork-Awesome-1.1.7/scss/fork-awesome.scss">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
-     <link href="css/skins/yellow.css" rel="stylesheet">
-     <link rel="stylesheet" href="css/circle.css">
-     <link rel="stylesheet" href="css/fm.revealator.jquery.min.css">
-     <script src="js/modernizr.custom.js"></script>
-    
-<title>Home Page</title>
-<style>
-   * , ::after, ::before {
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+        <link href="css/skins/yellow.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/fm.revealator.jquery.min.css">
+   
+        <link rel="stylesheet" href="css/circle.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+* , ::after, ::before {
    margin:0;
    padding:0;
    box-sizing:border-box;
  }
-
-    body
+ div
+ {
+   display:block;
+ }
+ body
     {
         margin:0;
         background:radial-gradient(circle, #333, black);
-        background-position: center center;
-       background-repeat: no-repeat;
-       background-attachment: fixed;
-        background-size: cover;
         color: #ffb400 ;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
         height: 100vh;
         font-size:29px;
-        display: flex;
-        flex-direction: column;
-        font-family:'Poppins',sans-serif;
         overflow-x: hidden;
+        box-sizing:border-box;
+        position: relative;
+        font-family:'Poppins',sans-serif;
     }
 
-  
+    
+    @media (min-width: 992px)
+  {
+    .d-lg-none
+    {
+      display:none;
+    }
     .header 
     {
     position: fixed;
@@ -50,6 +57,7 @@
     opacity: 1;
     transition: opacity 0.3s;
     -webkit-transition: opacity 0.3s;
+  
   }
 
   .header.hide-header {
@@ -147,115 +155,26 @@
   {
      background-color:#ffb400;
   }
-
-
-    .container
-    {
-        position: relative;
-        width: 100%;
-        height:870px;
-        max-width:640px;
-        max-height:3000px;
-        margin-top:30px;
-        overflow:hidden;
-        display:inline-block;
-        box-shadow:6px 7px 7px 1px black;
-        border-radius: 25px;
-        left: 2%;
-        color:white;
-    }
-    .container img 
-    {
-        height: 100%;
-        width: 100%;
-       -webkit-filter: blur(0px);
-       -moz-filter: blur(0px);
-       -o-filter: blur(0px);
-       -ms-filter: blur(0px);
-        filter: blur(0px);
-        background-size: cover;
-        background-repeat: no-repeat;
-        transition: all .5s;
-        filter: brightness(80%);
-    }
-     h6
-     {
-      color: #eee;
-      font-size: 22px;
-      font-weight: 400;
-      display: block;
-      line-height: 0;
-      display: block;
-
-     }
-
-     
-     h1
-     {
-      font-size: 56px;
-      line-height: 1.2;
-      font-weight: 900;
-      font-family:sans-serif;
-      margin:0;
-     }
+}
+  
      h2
      {
        font-weight: 500;
        font-family: sans-serif;
      }
-    span
-    {
-      color:#ffb400 ;
-    }
-
-    .text-uppercase
-    {
-       text-transform: uppercase !important;
-        
-    }
-    .open-sans-font
-    {
-      font-family:'Open sans',sans-serif;
-    }
-    .poppins-font
-    {
-      font-family:'Poppins', sans-serif;
-
-    }
     p
     {
       display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    line-height: 32px;
-    font-size: 16px;
-    }
-  
-    .container1
-    {
-        position: relative;
-        width: 100%;
-        height:1000px;
-        max-width:700px;
-        max-height:650px;
-        margin-top:100px;
-        overflow:hidden;
-        display:inline-block;
-        border-radius: 25px;
-        left: 11%;
-        color:white;
-        text-align: left;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      line-height: 32px;
+       font-size: 16px;
+       color:white;
     }
 
-    .parent
-    {
-      display:flex;
-    }
-
-
-.btn {
+    .btn {
   box-shadow: none !important;
   border-radius: 26px;
   font-weight: 500;
@@ -275,6 +194,7 @@
   font-size: 14px;
   text-align: center;
    font-weight:bold;
+   background-color: #ffb400;
 }
 
 .btn,
@@ -297,18 +217,21 @@
     -webkit-transform: translateX(-20px);
     transform: translateX(-20px);
   }
-.btn.btn-about:before {
-    content: "\f007";
+.btn.btn-contact:before {
+    content: "\f1d8";
   }
   .btn span {
     position: relative;
     display: block;
     transition: all 0.3s;
+    color:#fff;
   }
+  
 
   .btn:hover span {
     -webkit-transform: translateX(-10px);
     transform: translateX(-10px);
+    color:#fff;
   }
 
   .btn:hover:before {
@@ -316,398 +239,185 @@
     filter: alpha(opacity=100);
     -webkit-transform: translateX(0);
     transform: translateX(0);
-  }
-   
-  .container2
-  {
-       margin-top: 80px;
-       padding:20px;
-       text-align:center;
-       color:white;
-  }
-  
-  .container3
-    {
-    position: relative;
-    padding: 30px;
-    background-color: rgba(0, 0, 0, 0.600);
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    text-align:left;
-    color:white;
-    border-radius: 25px;
-    width: 100%;
-    height:1000px;
-    max-width:1100px;
-    max-height:380px;
-    margin-top:50px;
-    left:20%;
-    display: block;
-    border:1px solid black;
-
-    }
-  
-  img
-  {
-    border-radius:50%;
-    width:250px;
-    box-shadow:6px 7px 7px 1px black;
-  }
-
-  div
-  {
-    display:block;
-  }
-   .h3, h3
-  {
-     font-size:18px;
-     font-weight: 600;
-     
-     margin:0;
-  }
-
- .col
- {
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left:15px;
-    width: 300px;
- }
- .col i
- {
-    font-size: 15px;
-    color:#ffb400;
-    
- }
-.p
-{
-  font-size: 14px;
-  line-height:24px;
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
- .p,span
-{
-  font-family: sans-serif;
-}
-
-.title-bg
-{
-    font-size: 110px;
-    left: 0;
-    letter-spacing: 10px;
-    line-height: 0.7;
-    position: absolute;
-    right: 0;
-    top: 19%;
-    text-transform: uppercase;
-    font-weight: 800;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-    color: rgba(255, 255, 255, 0.20);
-}
-.col1
- {
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 10px;
-    padding-left: 30px
- }
-.icon-box1
-{
-    padding-top: 45px;
-    
-}
-.icon-box1 i
-{
-    display: flex;
-    float: left;
-    width: 45px;
-    height: 45px;
-    align-items: center;
-    justify-content: center;
-    color: #ffb400;
-    font-size: 20px;
-    -webkit-border-radius: 100%;
-    border-radius: 100%;
-    border: 1px solid #ffb400;
-    margin-right: 10px;
-}
-.desc-icon
-{
-  padding-left: 15px;
-  padding-top: 10px;
-}
-.desc-icon h6
-{
-  
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 5px;
-    margin:0;
-    padding:0;
-    color:white;
-    font-family: sans-serif;
-
-}
-.desc-icon span
-{
-  font-size: 13px;
-}
-.btn.btn-download:before {
-    content: "\f019";
-  }
-.btn span
-{
-  color:white;
-}
-hr.separator {
-  border-top: 1px solid #252525;
-  margin: 70px auto 55px;
-  max-width: 40%;
-  
-}
-
-.wrapper
-{
-	padding-bottom: 50px;
-}
-
-.divider
-{
-	position: relative;
-	margin-top: 90px;
-	height: 1px;
-}
-
-
-.div-transparent:before
-{
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 5%;
-	right: 5%;
-	width: 90%;
-	height: 1px;
-	background-image: linear-gradient(to right, transparent, rgb(60, 61, 61), transparent);
-}
-
-.div-dot:after
-{
-	content: "";
-	position: absolute;
-	z-index: 1;
-	top: -9px;
-	left: calc(50% - 9px);
-	width: 18px;
-	height: 18px;
-	background-color: goldenrod;
-	border: 1px solid rgb(48,49,51);
-	border-radius: 50%;
-	box-shadow: inset 0 0 0 2px white,
-					0 0 0 4px white;
-}
-
-.row
-{
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-.col2
-{
-    position: relative;
-    padding:15px;
-    text-align: center;
-    margin-top: 15px;
-}
-
-.col2 span
-{
-  font-size:26px;
-  font-weight:600;
-  text-align: center;
-  color:white;
-}
-
-.container4
-    {
-    position: relative;
-    padding: 30px;
-    padding-left: 70px;
-    background-color: rgba(0, 0, 0, 0.600);
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    text-align:left;
-    color:white;
-    border-radius: 25px;
-    width: 100%;
-    height:100%;
-    max-width:1165px;
-    max-height:380px;
-    margin-top:10px;
-    left:17%;
-    display: block;
-    border:1px solid black;
-    padding-right:30px;
-
-
-  }
-
-.container4 h6
-{
-  font-family: sans-serif;
-  margin-top:1.5rem!important;
-  font-size:1rem;
-  margin-bottom: .5rem;
-  font-weight:600;
-  line-height:1.2;
-  padding-top:20px;
-  text-align: left;
-}
-.container5
-    {
-    position: relative;
-    padding: 30px;
-    padding-left: 100px;
-    background-color: rgba(0, 0, 0, 0.600);
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    text-align:left;
-    color:white;
-    border-radius: 25px;
-    width: 100%;
-    height:100%;
-    max-width:1135px;
-    max-height:150px;
-    margin-top:10px;
-    left:17%;
-    display: block;
-    border:1px solid black;
-    padding-right:30px;
-
-
-  }
-
-.resume-box ul
-{
-  margin:0;
-  padding:0;
-  list-style:none;
-}
-.resume-box li
-{
-  position: relative;
-    padding: 0 20px 0 60px;
-    margin: 0 0 50px;
-}
-.resume-box .icon
-{
-  background-color: #ffb400;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  line-height: 40px;
-  text-align: center;
-  z-index: 1;
-  border-radius: 50%;
-  color: #fff;
-  font-size: 20px;
-}
-.fa {
-    display: inline-block;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.fa-briefcase:before {
-    content: "\f0b1";
-}
-.resume-box .time
-{
-  color:#fff;
-  font-size: 12px;
-  padding: 1px 10px;
-  display: inline-block;
-  margin-bottom: 12px;
-  border-radius: 20px;
-  font-weight: 600;
-  background-color: #252525;
-  opacity: .8;
-  font-family: sans-serif;
-  text-transform: uppercase!important
-}
-.resume-box h5
-{
-  font-size:18px;
-  margin:7px 0 10px;
-  font-family: sans-serif;
-  text-transform:uppercase  !important;
-  font-weight:500;
-  line-height 1.2;
-}
-.resume-box span
-{
-  opacity: .8;
-    font-weight: 600;
-    font-size: 15px;
-    position: relative;
-    padding-left: 26px;
     color:#fff;
-}
-.resume-box span:before
-{
-  position: absolute;
-    content: '';
-    width: 10px;
-    height: 2px;
-    background-color: #fff;
-    left: 7px;
-    top: 9px;
-    opacity: .8;
+  }
+  
 
-}
-.resume-box p 
-{
-    margin: 0;
-    color: #eee;
-    font-size: 14px;
-    font-family: sans-serif;
-}
-.resume-box li:after {
-    content: "";
+  @media (max-width: 991px) {
+
+  .d-none
+  {
+    display:none;
+  }
+
+  .btn {
+    padding: 0 28px;
+  }
+
+  body.home {
+    padding: 25px;
+  }
+
+  body.home .main-container {
+    padding: 30px 0 !important;
+  }
+
+  .home .home-details-container {
+    margin: 0 auto;
+  }
+
+  .home .home-details {
+    padding: 0;
+  }
+
+  .main-img-mobile {
+    border-radius: 50%;
+    width: 270px;
+    height: 270px;
+    border: 4px solid #252525;
+    margin: 0 auto 25px;
+    display: block;
+  }
+
+  .home .home-details h1 {
+    font-size: 38px;
+    line-height: 38px;
+    margin: 29px 0 13px;
+  }
+
+  .home .home-details p {
+    margin: 10px 0 23px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  #menuToggle {
+    display: inline-block;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 1111;
+    user-select: none;
+    padding: 19px 0 0 16px;
+    width: 54px;
+    height: 54px;
+    border-radius: 5px;
+    background: #252525;
+  }
+
+  #menuToggle input {
+    display: flex;
+    width: 54px;
+    height: 54px;
     position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
     top: 0;
-    left: 20px;
-    bottom: 0;
-    border-left: 1px solid #333;
-}
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
+    left: 0;
+  }
 
-/* Track */
-::-webkit-scrollbar-track {
-     background: #888;
-; 
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #2b2a2a; 
+  #menuToggle > span {
+    display: flex;
+    width: 23px;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #ffffff;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 5px 0;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    opacity 0.55s ease;
+  }
+
+  #menuToggle > span:first-child {
+    transform-origin: 0 0;
+  }
+
+  #menuToggle > span:nth-last-child(2) {
+    transform-origin: 0 100%;
+  }
+
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(4px, 0);
+    background: #fff;
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(2px, 4px);
+  }
+
+  #menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding-top: 60px;
+    background-color: #252525;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0 0;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+
+  #menuToggle input:checked ~ ul {
+    transform: none;
+  }
+
+  #menu li {
+    position: relative;
+    padding-left: 30px;
+  }
+
+  #menu li:after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: calc(100% - 60px);
+    background: #333;
+    left: 30px;
+  }
+
+  #menu li:last-child:after {
+    display: none;
+  }
+
+  #menu li.active a span {
+    font-weight: 600;
+  }
+
+  #menu li a {
+    color: #fff;
+    text-transform: uppercase;
+    transition-delay: 2s;
+    font-size: 26px;
+    display: block;
+    text-decoration: none;
+    padding: 14px 0;
+    position: relative;
+  }
+
+  #menu li a span {
+    position: absolute;
+    left: 50px;
+    font-weight: 400;
+  }
+
+  
+  .contact .main-content {
+    padding-bottom: 0;
+  }
+
 }
 .loader-wrapper {
   width: 100%;
@@ -751,276 +461,524 @@ hr.separator {
   75% { height: 100%;}
   100% { height: 0%;}
 }
-button, input, optgroup, select, textarea {
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-}
-.contactform input[type=text], .contact .contactform input[type=email] {
-    border: 1px solid #111;
-    width: 150px;
-    background: #252525;
-    color: #fff;
-    padding: 11px 26px;
-    border-radius: 30px;
-    outline: none !important;
-    transition: .3s;
-    display:block
-}
-input {
-    -webkit-writing-mode: horizontal-tb !important;
-    text-rendering: auto;
-    color: -internal-light-dark(black, white);
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: start;
-    appearance: textfield;
-    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
-    -webkit-rtl-ordering: logical;
-    cursor: text;
-    margin: 0em;
-    font: 400 13.3333px Arial;
-    padding: 1px 2px;
-    border-width: 2px;
-    border-style: inset;
-    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-image: initial;
-}
-.col3
- {
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-  
- }
- .d-block
- {
-  text-transform: uppercase;
-    opacity: .8;
-    font-weight: 400;
-    display: block!important;
-    font-weight: 600;
-    padding-left: 50px;
-    line-height: 21px;
-    font-size: 15px;
 
 
- }
- .custom-span
- {
-  font-weight: 500;
-    line-height: 21px;
-    padding-top: 5px;
-}
- 
-.custom-span i
+.title-bg
 {
-  top:10px;
+    font-size: 110px;
+    letter-spacing: 10px;
+    line-height: 0.7;
+    display: inline-flex;
+    text-transform: uppercase;
+    font-weight: 800;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.20);
+    position: relative;
+    top:-34px;
+    
+}
+.title-section
+{
+     margin: 0 auto;
+    width: 100%;
+    position: relative;
+    padding-top:80px;
+   
+}
+
+ .desc-icon
+{
+  padding-left: 55px;
+  padding-top: 1px;
+  padding-bottom: 5px;
+}
+.desc-icon h6
+{
+  
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 15px;
+    margin:0;
+    padding:0;
+    color:white;
+    font-family: sans-serif;
+
+}
+
+.desc-icon p
+{
+  font-size: 12px;
+  margin-block-start: 0em;
   color:#ffb400;
 }
-.contactform textarea {
-    border: 1px solid #111;
-    background: #252525;
-    color: #fff;
-    width:620px;
-    padding: 12px 26px;
-    margin-bottom: 20px;
-    height: 160px;
-    overflow: hidden;
-    border-radius: 30px;
-    outline: none !important;
-    transition: .3s;
-    
-}
-textarea {
-    overflow: auto;
-    resize: vertical;
-}
-textarea {
-    -webkit-writing-mode: horizontal-tb !important;
-    text-rendering: auto;
-    color: -internal-light-dark(black, white);
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: start;
-    appearance: textarea;
-    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
-    -webkit-rtl-ordering: logical;
-    flex-direction: column;
-    resize: auto;
-    cursor: text;
-    white-space: pre-wrap;
-    overflow-wrap: break-word;
-    column-count: initial !important;
-    margin: 0em;
-    font: 400 13.3333px Arial;
-    border-width: 1px;
-    border-style: solid;
-    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-image: initial;
-    padding: 2px;
-}
-.col4
+
+.icon-box1
 {
-    position: relative;
-    padding:15px;
-    margin-bottom: 15px;
-    padding-right: 70px;
-}
-.btn.btn-contact:before {
-    content: "\f1d8";
+    padding-top: 45px;
     
 }
-.btn.btn-contact:hover{
-  cursor: pointer;
+.icon-box1 i
+{
+    display: flex;
+    float: left;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    color: #ffb400;
+    font-size: 20px;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    border: 1px solid #ffb400;
+    margin-right: 10px;
+}
+.icon-box1
+{
+    padding-top: 45px;
+    
+}
+.icon-box1 i
+{
+    display: flex;
+    float: left;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    color: #ffb400;
+    font-size: 20px;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    border: 1px solid #ffb400;
+    margin-right: 10px;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-weight: 600;
+}
+h6, h6 {
+    font-size: 1rem;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+h3
+{
+  font-size: 18px;
+  color:whitesmoke;
+  font-weight: 600;
+  margin: 0;
+
+}
+.wrapper-separate
+{
+	padding-bottom: 50px;
+}
+.divider
+{
+	position: relative;
+	height: 1px;
+  margin: 70px auto 55px;
+}
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(60, 61, 61), transparent);
 }
 
+.div-dot:after
+{
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: -9px;
+	left: calc(50% - 9px);
+	width: 18px;
+	height: 18px;
+	background-color: goldenrod;
+	border: 1px solid rgb(48,49,51);
+	border-radius: 50%;
+	box-shadow: inset 0 0 0 2px white,
+					0 0 0 4px white;
+}
 
-</style>
-</head>
-<body>
-  <div class="loader-wrapper">
-    <span class="loader"><span class="loader-inner"></span></span>
-  </div>
-
-  <div class="d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
-  <div class="container2">
-    <h1>GET IN<span> TOUCH</span></h1>
-    <span class="title-bg">CONTACT</span>
-  </div>
-  <div class="container3">
-  <div class="parent">
-    
-  <div class="col3">
-    <h3>DON'T BE SHY !</h3>
-    <p>Feel free to get in touch with me. I am always<br>
-      open to discussing new projects, creative ideas<br> 
-      or opportunities to be part of your visions.
-    </p>
-    <p style="position:relative; " class="custom-span">
-    <i class="fa fa-envelope-open" style="position: absolute; font-size: 33px;"></i>
-    <span class="d-block" >MAIL ME</span>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adsyahir16@gmail.com
-  </p>
-  <p style="position:relative; " class="custom-span">
-    <i class="fa fa-phone-square" style="position: absolute; font-size: 38px;"></i>
-    <span class="d-block" >CALL ME</span>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;019-9965613
-  </p>
-  </div>
-<div class="col">
+.info-box-contact
+{
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.600);
+  border-radius: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top:30px;
+  padding-bottom: 30px;
+}
   
-  <form class="contactform" method="post">
-    <div class="parent">
-<div class="col2">
-  <input type="text" name="name" placeholder="YOUR NAME">
-</div>
-<div class="col2">
-  <input type="text" name="email" placeholder="YOUR EMAIL">
-</div>
-<div class="col2">
-  <input type="text" name="subject" placeholder="YOUR SUBJECT">
-</div>
-</div>
-<div class="col4">
-  <textarea name="message" placeholder="YOUR MESSAGE" spellcheck="false"></textarea>
-  <button type="submit" class="btn btn-contact"><span data-hover="Send Message">Send Message</span></button>
-</div>
-  </div>
-</div>
-</div>
+  .title-section h1
+{
+  font-size: 56px;
+  margin: 0;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #fff;
+}
+@media screen and (max-width:575px)
+{
+  img
+  {
+     display:block;
+     width: 70%;
+     margin:0 auto 30px;
+
+  }
  
-</div>
-</div>
+}
+@media (max-width: 576px)
+{
+.title-section {
+    padding: 16px 25px 14px;
+    background: #252525;
+    border-bottom: 1px solid #333;
+    margin-bottom: 36px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 11;
+    top: 0;
+    
+}
+@media (max-width: 576px)
+{
+.info-box-contact
+    {
+      margin-right:1px ;
+      margin-left: 1px;
+    }
+    .padding-b
+    {
+      padding-bottom:20px;
+    }
+}
+.title-bg
+{
+  display: none;
+}
+.title-section h1
+{
+  font-size: 26px;
+}
+.container
+{
+  margin-top: 100px;
+}
+}
+@media (max-width: 576px)
+{
+#menuToggle {
+    right: 10px;
+    top: 4px;
+    padding: 19px 0 0 13px;
+    width: 49px;
+    height: 49px;
+   }
+}
+@media (max-width: 1350px) and (min-width: 992px)
+{
+.container {
+    max-width: calc(100% - 180px);
+}
+}
+
+.main-content {
+  padding-bottom: 85px;
+}
+/* Left Side */
+
+ .custom-span-contact {
+  font-weight: 600;
+  padding-left: 50px;
+  line-height: 21px;
+  padding-top: 5px;
+}
+
+.custom-span-contact i {
+  left: 0;
+  top: 10px;
+  font-size: 33px;
+}
+
+.custom-span-contact i.fa-phone-square {
+  font-size: 39px;
+  top: 7px;
+}
+
+.custom-span-contact span {
+  text-transform: uppercase;
+  opacity: .8;
+  font-weight: 400;
+}
+
+ul.social {
+  margin-left: -5px;
+}
+
+ ul.social li {
+  display: inline-block;
+}
+
+ ul.social li a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  line-height: 42px;
+  text-align: center;
+  color: #fff;
+  transition: .3s;
+  font-size: 17px;
+  margin: 0 6px;
+  background: #2b2a2a;
+  border-radius: 50%;
+}
+/* Form */
+.contactform input[type=text],
+.contactform input[type=email] {
+  border: 1px solid #111;
+  width: 100%;
+  background: #252525;
+  color: #fff;
+  padding: 11px 26px;
+  margin-bottom: 30px;
+  border-radius: 30px;
+  outline: none !important;
+  transition: .3s;
+}
+
+ .contactform textarea {
+  border: 1px solid #111;
+  background: #252525;
+  color: #fff;
+  width: 100%;
+  padding: 12px 26px;
+  margin-bottom: 20px;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 30px;
+  outline: none !important;
+  transition: .3s;
+}
+
+.contactform .form-message {
+  margin: 24px 0;
+}
+
+.contactform .output_message {
+  display: block;
+  color: #fff;
+  height: 46px;
+  line-height: 46px;
+  border-radius: 30px;
+}
+
+.contactform .output_message.success {
+  background: #28a745;
+}
+
+ .contactform .output_message.success:before {
+  font-family: FontAwesome;
+  content: "\f14a";
+  padding-right: 10px;
+}
+
+.contactform .output_message.error {
+  background: #dc3545;
+}
+
+.contactform .output_message.error:before {
+  font-family: FontAwesome;
+  content: "\f071";
+  padding-right: 10px;
+}
+ .row input,textarea
+ {
+   font-size:15px;
+ }
+i
+{
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.col2 {
+    position: relative;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
 
 
+        </style>
+    </head>
+    <body>
+      <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+      </div>
+      <header class="header" id="navbar-collapse-toggle">
+        <!-- Fixed Navigation Starts -->
+        <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1 no-transform revealator-within">
+            <li class="icon-box">
+                <i class="fa fa-home"></i>
+                <a href="index.html">
+                    <h2>Home</h2>
+                </a>
+            </li>
+            <li class="icon-box ">
+              <i class="fa fa-user"></i>
+              <a href="about2.html">
+                  <h2>About</h2>
+              </a>
+          </li>
+            <li class="icon-box">
+              <i class="fa fa-facebook"></i>
+              <a href="https://www.facebook.com/adam.syahir.5" target="_blank">
+                  <h2>Facebook</h2>
+              </a>
+          </li>
+            <li class="icon-box">
+                <i class="fa fa-discord-alt" aria-hidden="true"></i>
+                <a href="https://discord.gg/JpgS8hv3gH" target="_blank">
+                    <h2>Discord</h2>
+                </a>
+            </li>
+            <li class="icon-box">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <a href="https://twitter.com/adsyahir" target="_blank">
+                  <h2>Twitter</h2>
+              </a>
+          </li>
+            <li class="icon-box">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <a href="https://www.instagram.com/adsyahir/" target="_blank">
+                  <h2>Instagram</h2>
+              </a>
+          </li>
+            <li class="icon-box active">
+                <i class="fa fa-envelope-open"></i>
+                <a href="contact.html">
+                    <h2>Contact</h2>
+                </a>
+            </li>
+        </ul>
+        <!-- Fixed Navigation Ends -->
+        <!-- Mobile Menu Starts -->
+        <nav role="navigation" class="d-block d-lg-none">
+          <div id="menuToggle">
+              <input type="checkbox">
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul class="list-unstyled" id="menu">
+                  <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                  <li ><a href="about2.html"><i class="fa fa-user"></i><span>About</span></a></li>
+                  <li><a href="https://www.facebook.com/adam.syahir.5" target="_blank"><i class="fa fa-facebook"></i><span>Facebook</span></a></li>
+                  <li><a href="https://discord.gg/JpgS8hv3gH" target="_blank"><i class="fa fa-discord-alt"></i><span>Discord</span></a></li>
+                  <li><a href="https://twitter.com/adsyahir" target="_blank"><i class="fa fa-twitter"></i><span>Twitter</span></a></li>
+                  <li><a href="https://www.instagram.com/adsyahir/" target="_blank"><i class="fa fa-instagram"></i><span>Instagram</span></a></li>
+                  <li class="active"><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+              </ul>
+          </div>
+      </nav>
+        <!-- Mobile Menu Ends -->
+    </header>
+      <div class="title-section  d-lg-block revealator-slideup revealator-once revealator-delay1">
+       <div class="text-left text-sm-center">
+        <h1>GET IN<span> TOUCH</span></h1>
+        <span class="title-bg">CONTACT</span>
+       </div>
+      </div>
 
-<header class="header" id="navbar-collapse-toggle">
-    <!-- Fixed Navigation Starts -->
-    <ul class="icon-menu ">
-        <li class="icon-box ">
-        <i class="fa fa-home"></i>
-            <a href="index.html">
-                <h2>Home</h2>
-            </a>
-        </li>
-      </li>
-        <li class="icon-box">
-            <i class="fa fa-user"></i>
-            <a href="about.html">
-                <h2>About</h2>
-            </a>
-        </li>
-        <li class="icon-box">
-          <i class="fa fa-facebook"></i>
-          <a href="https://www.facebook.com/adam.syahir.5" target="_blank">
-              <h2>Facebook</h2>
-          </a>
-      </li>
-        <li class="icon-box">
-            <i class="fa fa-discord-alt" aria-hidden="true"></i>
-            <a href="https://discord.gg/JpgS8hv3gH" target="_blank">
-                <h2>Discord</h2>
-            </a>
-        </li>
-        <li class="icon-box">
-          <i class="fa fa-twitter" aria-hidden="true"></i>
-          <a href="https://twitter.com/adsyahir" target="_blank">
-              <h2>Twitter</h2>
-          </a>
-      </li>
-        <li class="icon-box">
-          <i class="fa fa-instagram" aria-hidden="true"></i>
-          <a href="https://www.instagram.com/adsyahir/" target="_blank">
-              <h2>Instagram</h2>
-          </a>
-      </li>
-      <li class="icon-box active">
-        <i class="fa fa-envelope-open"></i>
-        <a href="contact.html">
-            <h2>Contact</h2>
-        </a>
-    </li>
-        
-    </ul>
-    <!-- Fixed Navigation Ends -->
-  
-</header>
 
-<script src="js/jquery-3.5.0.min.js"></script>
-<script src="js/styleswitcher.js"></script>
-<script src="js/fm.revealator.jquery.min.js"></script>
-<script src="js/imagesloaded.pkgd.min.js"></script>
-<script src="js/masonry.pkgd.min.js"></script>
-<script src="js/classie.js"></script>
-<script src="js/cbpGridGallery.js"></script>
-<script src="js/jquery.hoverdir.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/custom.js"></script>
-<script src="jquery-2.1.4.js"></script>
-<script>
-  $(window).on("load",function(){
-    $(".loader-wrapper").fadeOut("slow");
-    $(window).scrollTop(0);
-  });
+       <section class="container  d-lg-block revealator-slideup revealator-once revealator-delay1">
+         <div class= "row info-box-contact">
+          <div class="col-12 col-lg-4 padding-b">
+            <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">Don't be shy !</h3>
+            <p class="open-sans-font mb-3">Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+            <p class="open-sans-font custom-span-contact position-relative">
+                <i style="color:#ffb400;"class="fa fa-envelope-open position-absolute"></i>
+                <span  style="color:#ffb400;" class="d-block">mail me</span>steve@mail.com
+            </p>
+            <p class="open-sans-font custom-span-contact position-relative">
+                <i  style="color:#ffb400;" class="fa fa-phone-square position-absolute"></i>
+                <span style="color:#ffb400;" class="d-block">call me</span>+216 21 184 010
+            </p>
+          
+        </div>
+        <div class="col-12 col-lg-8">
+          <form class="contactform" method="post" action="php/process-form.php">
+              <div class="contactform">
+                  <div class="row">
+                      <div class="col-12 col-md-4">
+                          <input type="text" name="name" placeholder="YOUR NAME">
+                      </div>
+                      <div class="col-12 col-md-4">
+                          <input type="email" name="email" placeholder="YOUR EMAIL">
+                      </div>
+                      <div class="col-12 col-md-4">
+                          <input type="text" name="subject" placeholder="YOUR SUBJECT">
+                      </div>
+                      <div class="col-12"><grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none;" class="cGcvT"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none;" class="cGcvT"></grammarly-extension>
+                          <textarea name="message" placeholder="YOUR MESSAGE" spellcheck="false"></textarea>
+                          <button type="submit" class="btn btn-contact"><span data-hover="Send Message">Send Message</span></button>
+                      </div>
+                      
+                  </div>
+              </div>
+          </form>
+      </div>
 
 
-$(document).ready(function() {
-  $("html,body").animate({scrollTop: 0}, 100); //100ms for example
-});
-</script>
+         </div>
+      
+       </section>
+       <div class="col2">
 
-
-</body>
+      </div>
+       
+    
+          <script src="js/jquery-3.5.0.min.js"></script>
+      
+          <script src="js/bootstrap.js"></script>
+          <script src="js/custom.js"></script>
+          <script src="jquery-2.1.4.js"></script>
+          <script src="js/fm.revealator.jquery.min.js"></script>
+          <script>
+            $(window).on("load", function () {
+              $(".loader-wrapper").fadeOut("slow");
+              $(window).scrollTop(0);
+            });
+            $(document).ready(function () {
+              $("html,body").animate({ scrollTop: 0 }, 100); //100ms for example
+            });
+          </script>
+    </body>
 </html>
