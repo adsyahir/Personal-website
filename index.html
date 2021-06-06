@@ -1812,6 +1812,9 @@ body:active .particle::after {
   $(window).load(function() {
     $('#particle').hide();
   });
+  $(document).ready(function () {
+  $("html,body").animate({ scrollTop: 0 }, 100); //100ms for example
+  });
 </script>
 </script>
     </body>
