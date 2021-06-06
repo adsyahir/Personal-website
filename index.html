@@ -1661,12 +1661,19 @@ body:active .particle::after {
   right: 35px;
   height: 50px;
   z-index: 2;
-  
   cursor: pointer;
   font-size: 25px;
-  
-
+  animation: 1s linear 0s 1 bottomToUp;
 }
+@keyframes bottomToUp {
+  0% {
+    transform: translateY(150%);
+  }
+  100% {
+    transform:translateY(0);
+  }
+}
+
 .social i
 {
   color:#ddd;
@@ -1676,12 +1683,12 @@ body:active .particle::after {
   display: inline-flex;
   margin-left: 20px;
   color:#ddd;
-  
 }
 .social i:hover
 {
   color:#ffb400;
 }
+
 
 </style>
 </head>
@@ -1719,16 +1726,8 @@ body:active .particle::after {
           <a href="about" class="btn btn-about"><span data-hover="more about me">more about me</span></a>
           
         </div>
-        <div class="box3">
-          <div class="social">
-            <ul>
-            <li><a href="https://twitter.com/adsyahir" target="_blank"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="https://www.instagram.com/adsyahir/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="https://github.com/adsyahir" target="_blank"><i class="fa fa-github"></i></a></li>
-            </ul>
-          </div>
-
-          <header class="header" id="navbar-collapse-toggle">
+        <div class="box3  ">
+          <header class="header " id="navbar-collapse-toggle">
             <!-- Fixed Navigation Starts -->
             <ul class="icon-menu d-none">
                 <li class="icon-box active">
@@ -1785,6 +1784,13 @@ body:active .particle::after {
         </div>
           
     </div>
+    <div class="social ">
+      <ul>
+      <li><a href="https://twitter.com/adsyahir" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="https://www.instagram.com/adsyahir/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+      <li><a href="https://github.com/adsyahir" target="_blank"><i class="fa fa-github"></i></a></li>
+      </ul>
+    </div>
     <script src="js/jquery-3.5.0.min.js"></script>
     <script src="js/fm.revealator.jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
@@ -1799,7 +1805,7 @@ body:active .particle::after {
   $(window).load(function() {
     $('#particle').hide();
   });
-</script
+</script>
 </script>
     </body>
 </html>
