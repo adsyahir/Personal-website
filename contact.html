@@ -18,7 +18,7 @@
     <link rel="icon" href="img/chicken.png" />
     <link rel="stylesheet" href="css/circle.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <title>Contact</title>
+    <title>Adam Syahir | Contact</title>
     <style>
       *,
       ::after,
@@ -848,6 +848,25 @@
       ::-webkit-scrollbar-thumb {
         background: #2b2a2a;
       }
+      .social {
+        position: relative;
+        height: 50px;
+        z-index: 2;
+        font-size: 25px;
+      }
+
+      .social i {
+        color: #ddd;
+      }
+      .social li {
+        display: inline-flex;
+        margin-right: 15px;
+        color: #ddd;
+        cursor: pointer;
+      }
+      .social i:hover {
+        color: #ffb400;
+      }
     </style>
   </head>
   <body>
@@ -980,14 +999,34 @@
             <span style="color: #ffb400" class="d-block">mail me</span
             >adsyahir16@gmail.com
           </p>
-          <p class="open-sans-font custom-span-contact position-relative">
-            <i
-              style="color: #ffb400"
-              class="fa fa-phone-square position-absolute"
-            ></i>
-            <span style="color: #ffb400" class="d-block">call me</span
-            >+60123456789
-          </p>
+          <div class="social">
+            <ul>
+              <li>
+                <a
+                  title="Twitter"
+                  href="https://twitter.com/adsyahir"
+                  target="_blank"
+                  ><i class="fa fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  title="Instagram"
+                  href="https://www.instagram.com/adsyahir/"
+                  target="_blank"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  title="Github"
+                  href="https://github.com/adsyahir"
+                  target="_blank"
+                  ><i class="fa fa-github"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="col-12 col-lg-8">
           <form class="contactform" method="post" action="insert.php">
