@@ -1,0 +1,1 @@
+{"version":"1.0.0","name":"personal-website","dependencies":{"body-parser":{"version":"1.19.0"},"body":{"version":"5.1.0"},"express":{"version":"4.17.1"},"mongoose":{"version":"5.12.13"}}}

@@ -646,7 +646,7 @@
         padding-left: 30px;
         padding-right: 30px;
         padding-top: 30px;
-        padding-bottom: 30px;
+     
       }
 
       .title-section h1 {
@@ -791,33 +791,6 @@
         margin: 24px 0;
       }
 
-      .contactform .output_message {
-        display: block;
-        color: #fff;
-        height: 46px;
-        line-height: 46px;
-        border-radius: 30px;
-      }
-
-      .contactform .output_message.success {
-        background: #28a745;
-      }
-
-      .contactform .output_message.success:before {
-        font-family: FontAwesome;
-        content: "\f14a";
-        padding-right: 10px;
-      }
-
-      .contactform .output_message.error {
-        background: #dc3545;
-      }
-
-      .contactform .output_message.error:before {
-        font-family: FontAwesome;
-        content: "\f071";
-        padding-right: 10px;
-      }
       .row input,
       textarea {
         font-size: 15px;
@@ -866,6 +839,20 @@
       }
       .social i:hover {
         color: #ffb400;
+      }
+       .error-messages {
+         color:#ddd;
+         font-size: 16px;
+        } 
+
+      #success
+      {
+        display: none;
+
+      }
+      #error
+      {
+        display:none;
       }
     </style>
   </head>
@@ -1029,21 +1016,21 @@
           </div>
         </div>
         <div class="col-12 col-lg-8">
-          <form class="contactform" method="post" action="insert.php">
+          <form class="contactform" method="post" name="form1" id="form1">
             <div class="contactform">
               <div class="row">
                 <div class="col-12 col-md-4">
-                  <input type="text" name="name" placeholder="YOUR NAME" />
+                  <input type="text" name="name" placeholder="YOUR NAME" required/>
                 </div>
                 <div class="col-12 col-md-4">
-                  <input type="email" name="email" placeholder="YOUR EMAIL" />
+                  <input type="email" name="email" placeholder="YOUR EMAIL" required/>
                 </div>
                 <div class="col-12 col-md-4">
                   <input
                     type="text"
                     name="subject"
                     placeholder="YOUR SUBJECT"
-                  />
+                  required/>
                 </div>
                 <div class="col-12">
                   <grammarly-extension
@@ -1070,10 +1057,22 @@
                     name="message"
                     placeholder="YOUR MESSAGE"
                     spellcheck="false"
-                  ></textarea>
-                  <button type="submit" name="submit" class="btn btn-contact">
+                 required ></textarea>
+                  <button type="submit" id="submit"name="submit" class="btn btn-contact">
                     <span data-hover="Send Message">Send Message</span>
                   </button>
+                </div>
+                <div class="col-12 form-message">
+                  <div class="error-messages">
+                    <div id="success" >
+                      <i class="fa fa-check-circle"></i> Thank you, your message
+                      has been sent.
+                    </div>
+                    <div id="error" >
+                      <i class="fa fa-times-circle" ></i>Error occurred while
+                      sending email. Please try again later.
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1089,7 +1088,21 @@
     <script src="js/custom.js"></script>
     <script src="jquery-2.1.4.js"></script>
     <script src="js/fm.revealator.jquery.min.js"></script>
+    <script src="js/jquery.validation.js"></script>
     <script>
+
+$('#form1').submit(function() {
+  var isValid=$("#form1").valid();
+           if (isValid) { //If there is no validation error
+
+             $('#success').show();
+          } 
+          else {
+              $('#error').show();                           
+          }
+
+        });
+
       $(window).on("load", function () {
         $(".loader-wrapper").fadeOut("slow");
         $(window).scrollTop(0);
